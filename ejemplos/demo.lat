@@ -1,0 +1,54 @@
+incluir("mysql")
+con = mysql.conectar("localhost", "root", "l4tin0", "mysql")
+#Da error si no valido si existe la base
+sql = "CREATE DATABASE IF NOT EXISTS Demo;"
+resultado = mysql.consultar(con, sql)
+
+sql = "use Demo;"
+resultado = mysql.consultar(con, sql)
+
+sql = "CREATE TABLE IF NOT EXISTS `clientes` (
+  `nif` int(11) NOT NULL AUTO_INCREMENT COMMENT 'Clave primaria',
+  `nombre` varchar(50) NOT NULL COMMENT 'nombre cliente',
+  `apellidos` varchar(100) NOT NULL COMMENT 'Apellidos cliente',
+  `telefono` int(9) NOT NULL COMMENT 'móvil',
+  `codigo_postal` int(5) DEFAULT NULL,
+  `edad` int(3) DEFAULT NULL,
+  `sexo` char(1) NOT NULL,
+  `profesion` text NOT NULL,
+  PRIMARY KEY (`nif`),
+  UNIQUE KEY `telefono` (`telefono`),
+  KEY `nombre` (`nombre`),
+  FULLTEXT KEY `apellidos` (`apellidos`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COMMENT='tabla de clientes';"
+resultado = mysql.consultar(con, sql)
+
+sql = "insert into clientes (nombre, apellidos, telefono, codigo_postal, edad, sexo, profesion)
+values('Primitivo', 'Roman Montero', 551234567, 65000, 33, 'M', 'Ing. Sistemas');"
+
+sql = "insert into clientes (nombre, apellidos, telefono, codigo_postal, edad, sexo, profesion)
+values('Melvin', 'Guerrero', 559876543, 12345, 28, 'M', 'Diseñador grafico');"
+
+//consulta que se ejecutara
+sql = "select nombre, apellidos, telefono from clientes"	// limit 10;
+
+//executa la consulta
+resultado = mysql.consultar(con, sql)
+
+//obtiene el numero de filas del resultado
+nfilas = mysql.numero_filas(resultado)
+imprimir("numero de filas: " .. nfilas)
+
+//muestra el encabezado
+imprimir("nombre\t\tapellidos\t\ttelefono")
+
+//obtener la informacion de todas la filas de la consulta
+desde(i=0; i< nfilas;i++)
+	//extrae la informacion de la fila
+	datos = mysql.extraer_fila(resultado)
+	//muestra la informacion en consola
+	imprimir(datos["nombre"] .. "\t\t" .. datos["apellidos"] .. "\t\t" .. datos["telefono"])
+fin
+
+//cierra la desconexion a base de datos
+mysql.desconectar(con)

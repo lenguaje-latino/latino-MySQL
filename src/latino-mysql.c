@@ -23,7 +23,11 @@ THE SOFTWARE.
  */
 
 // Referencia API Mysql : https://dev.mysql.com/doc/refman/5.6/en/c-api.html
+#ifdef _win32
 #include <mysql.h>
+#else
+#include <mysql/mysql.h>
+#endif
 
 #define LATINO_LIB
 

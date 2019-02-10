@@ -15,6 +15,10 @@ sudo bash instalar.sh
 
 #### Dependecias
 [mysql](https://dev.mysql.com/doc/refman/8.0/en/linux-installation.html)
+```
+#instalacion en ubuntu
+sudo apt-get install mysql-server mysql-client libmysqlclient-dev
+```
 
 ##### Uso de esta librería en código latino
 ```
