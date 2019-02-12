@@ -24,15 +24,22 @@ THE SOFTWARE.
 
 // Referencia API Mysql : https://dev.mysql.com/doc/refman/5.6/en/c-api.html
 #ifdef _win32
-#include <mysql.h>
+    #include <mysql.h>
+#elif __APPLE__
+    #include </usr/local/mysql/include/mysql.h>
 #else
-#include <mysql/mysql.h>
+    #include <mysql/mysql.h>
 #endif
 
 #define LATINO_LIB
 
-#include <latino.h>
-#include <latobj.h>
+#ifdef __APPLE__
+    #include </usr/local/include/latino.h>
+    #include </usr/local/include/latobj.h>
+#else
+    #include <latino.h>
+    #include <latobj.h>
+#endif
 
 #define LIB_MYSQL_NAME "mysql"
 
