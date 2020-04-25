@@ -36,7 +36,7 @@ sudo chmod +x instalar.sh
 sudo bash instalar.sh
 ```
 
-# Uso de esta librería en código latino
+# Uso de esta librería en código Latino
 ```sql
 //importa la libreria latino-mysql
 incluir("mysql")
