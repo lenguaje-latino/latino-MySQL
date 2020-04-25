@@ -70,6 +70,14 @@ fin
 //cierra la desconexion a base de datos
 mysql.desconectar(con)
 ```
+
+# Ayuda y Documentación
+*Latino* dispone de un foro en su página web oficial, así como también un grupo en Telegram, Gitter y una documentación a la que puedes dirigirte en caso de cualquier duda.
+- [Foros de Latino](http://lenguaje-latino.org/foro/)
+- [Chat en Gitter](https://gitter.im/primitivorm/latino?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+- [Chat en Telegram](https://t.me/joinchat/AAAAAD6l6_qIgQAAgu9DVQ)
+- [Manual Latino](https://manuallatino.blogspot.com)
+
 # Licencia
 Licenciado bajo la licencia [MIT](https://github.com/MelvinG24/Latino-MySQL/blob/master/LICENSE)<br/>
 Cualquier aportación o sugerencia es bienvenida
