@@ -20,7 +20,7 @@ Los requisitos para ulitizar esta librería son los siguientes:
 Antes de hacer nada, necesitamos tener el paquete de *Latino* y MySQL instalados en nuestro sistema. Una vez tengamos ambos programas instalados pasaremos a instalar la Librería de Latino-MySQL.
 
 |Instalador de Latino-MySQL (Win, Mac)|[Descargar](https://github.com/MelvinG24/Latino-MySQL/releases)|
-|---|---|
+|:---|---|
 |En **Linux** esta librería se instala de forma manual||
 
 ### Instalación de MySQL en Ubuntu
@@ -70,6 +70,6 @@ fin
 //cierra la desconexion a base de datos
 mysql.desconectar(con)
 ```
-# License
+# Licencia
 Licenciado bajo la licencia [MIT](https://github.com/MelvinG24/Latino-MySQL/blob/master/LICENSE)<br/>
 Cualquier aportación o sugerencia es bienvenida
