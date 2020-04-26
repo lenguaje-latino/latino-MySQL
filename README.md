@@ -24,7 +24,7 @@ Antes de hacer nada, necesitamos tener el paquete de *Latino* y MySQL instalados
 |En **Linux** esta librería se instala de forma manual||
 
 #### Nota
-> En MacOS si la instalación presenta problemas de seguridad por ser un desarrollador desconosido, estos son los pasos a seguir:<br/>
+> En MacOS si la instalación presenta problemas de seguridad por ser un desarrollador desconocido, estos son los pasos a seguir:<br/>
 > Abrimos<br/>
 > "**System Preferences**"<br/>
 > |--> "**Security and Privacy**"</br>
