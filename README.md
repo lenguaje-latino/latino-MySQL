@@ -23,6 +23,13 @@ Antes de hacer nada, necesitamos tener el paquete de *Latino* y MySQL instalados
 |:---|---|
 |En **Linux** esta librería se instala de forma manual||
 
+#### Nota
+> En MacOS si la instalación presenta problemas de seguridad por ser un desarrollador desconosido, estos son los pasos a seguir:<br/>
+> Abrimos<br/>
+> "**System Preferences**"<br/>
+> |--> "**Security and Privacy**"</br>
+> y llegado aquí damos permiso al sistema de ejecutar la instalación de Latino-MySQL
+
 ### Instalación de MySQL en Ubuntu
 ```bash
 #instalacion en ubuntu
