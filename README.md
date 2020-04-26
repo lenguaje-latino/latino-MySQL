@@ -70,6 +70,29 @@ fin
 //cierra la desconexion a base de datos
 mysql.desconectar(con)
 ```
+# Desinstalar Latino-MySQL
+* [Desinstalar en Windows](#desWin)
+* [Desinstalar en Mac](#desMac)
+* [Desinstalar en Linux](#desLx)
+
+<a name="desWin"></a>
+### Desinstalar en Windows
+
+<a name="desMac"></a>
+### Desinstalar en Mac
+Para desinstalar la librería de Latino-MySQL en Mac estos son los pasos a seguir:
+1. Doble-clic en nuestro paquete de instalación Latino-MySQL-XXX-Darwin.pkg.
+2. Una vez nuestra imagen sea montada en nuestro escritorio hacemos doble-clic para abrir.
+3. Doble-clic en la carpeta llamada **Extras**.
+4. Abrimos nuestra Terminal en Mac.
+5. Escribimos **sudo sh ** (le dejamos un espacio al final).
+6. Agaramos y soltamos nuestro archivo **unistall.sh** en nuestra Terminal.
+    Ejemplo:
+	    **$ sudo sh /Volumes/Latino-MySQL-XXX-Darwin/Extras/unistall.sh**
+7. Presionamos **Enter** para correr el comando y procedemos con insertar nuestra contraseña de administrador.
+
+<a name="desLx"></a>
+### Desinstalar en Linux
 
 # Ayuda y Documentación
 *Latino* dispone de un foro en su página web oficial, así como también un grupo en Telegram, Gitter y una documentación a la que puedes dirigirte en caso de cualquier duda.
