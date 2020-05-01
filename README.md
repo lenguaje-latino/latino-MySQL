@@ -93,9 +93,9 @@ Para desinstalar la librería de Latino-MySQL en Mac estos son los pasos a segui
 3. Doble-clic en la carpeta llamada **Extras**.
 4. Abrimos nuestra Terminal en Mac.
 5. Escribimos **sudo sh ** (le dejamos un espacio al final).
-6. Agaramos y soltamos nuestro archivo **unistall.sh** en nuestra Terminal.
+6. Agaramos y soltamos nuestro archivo **uninstall.sh** en nuestra Terminal.
     Ejemplo:
-	    **$ sudo sh /Volumes/Latino-MySQL-XXX-Darwin/Extras/unistall.sh**
+	    **$ sudo sh /Volumes/Latino-MySQL-XXX-Darwin/Extras/uninstall.sh**
 7. Presionamos **Enter** para correr el comando y procedemos con insertar nuestra contraseña de administrador.
 
 <a name="desLx"></a>
