@@ -2,10 +2,9 @@
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/MelvinG24/Latino-MySQL)
 ![GitHub](https://img.shields.io/github/license/MelvinG24/Latino-MySQL)
 
-Esta librería está desarrollada para trabajar en conjunto con *Latino* (Un lenguaje de programación con sintaxis al Español). Para mayor información sobre este lenguaje de programación visite el repositorio oficial del lenguaje [aquí](https://github.com/lenguaje-latino/Latino/)
-
-**Propósito de esta librería**:<br/>
 Esta librería nos permite conectar y trabajar con base de datos MySQL usando *Latino* como lenguaje.
+
+>Esta librería está desarrollada para trabajar en conjunto con *Latino* (Un lenguaje de programación con sintaxis al Español). Para mayor información sobre este lenguaje de programación visite el repositorio oficial del lenguaje [aquí](https://github.com/lenguaje-latino/Latino/)
 
 ## Requisitos
 Los requisitos para ulitizar esta librería son los siguientes: 
@@ -17,18 +16,22 @@ Los requisitos para ulitizar esta librería son los siguientes:
 |MySQL (Sólo Linux)|[Descargar](https://dev.mysql.com/doc/refman/8.0/en/linux-installation.html)|
 
 # Instalación de la librería Latino-MySQL
-Antes de hacer nada, necesitamos tener el paquete de *Latino* y MySQL instalados en nuestro sistema. Una vez tengamos ambos programas instalados pasaremos a instalar la Librería de Latino-MySQL.
+Antes de hacer nada, necesitamos tener *Latino* y MySQL instalados en nuestro sistema. Una vez tengamos ambos programas instalados pasaremos a instalar la Librería de Latino-MySQL.
 
-|Instalador de Latino-MySQL (Win, Mac)|[Descargar](https://github.com/MelvinG24/Latino-MySQL/releases)|
-|:---|---|
-|En **Linux** esta librería se instala de forma manual||
+|Descripción|Enlaces|
+|---|---|
+|Instalador de Latino-MySQL (Win, Mac) |[Descargar](https://github.com/MelvinG24/Latino-MySQL/releases)| 
+|En **Linux** esta librería se instala de forma manual|[Aquí](#linuxUbuntu)|
 
-#### Nota
+### :warning: Nota para los usuarios de MacOS
 > En MacOS si la instalación presenta problemas de seguridad por ser un desarrollador desconocido, estos son los pasos a seguir:<br/>
-> Abrimos<br/>
-> "**System Preferences**"<br/>
-> |--> "**Security and Privacy**"</br>
+> Abrimos "**System Preferences**"<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--> "**Security and Privacy**"</br>
 > y llegado aquí damos permiso al sistema de ejecutar la instalación de Latino-MySQL
+
+<a name="linuxUbuntu"></a>
+### Instalación de Latino-MySQL en Ubuntu
+Primero pasamos a instalar MySQL y despues la librería de Latino-MySQL en nuestro sistema.
 
 ### Instalación de MySQL en Ubuntu
 ```bash
