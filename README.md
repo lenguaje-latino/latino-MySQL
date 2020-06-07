@@ -30,7 +30,7 @@ Antes de hacer nada, necesitamos tener *Latino* y MySQL instalados en nuestro si
 > y llegado aquí damos permiso al sistema de ejecutar la instalación de Latino-MySQL
 
 <a name="linuxUbuntu"></a>
-### Instalación de Latino-MySQL en Ubuntu
+## Instalación de Latino-MySQL en Ubuntu
 Primero pasamos a instalar MySQL y despues la librería de Latino-MySQL en nuestro sistema.
 
 ### Instalación de MySQL en Ubuntu
