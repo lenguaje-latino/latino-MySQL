@@ -106,10 +106,11 @@ Para desinstalar la librería de Latino-MySQL en Mac estos son los pasos a segui
 
 # Ayuda y Documentación
 *Latino* dispone de un foro en su página web oficial, así como también un grupo en Telegram, Gitter y una documentación a la que puedes dirigirte en caso de cualquier duda.
-- [Foros de Latino](http://lenguaje-latino.org/foro/)
+- [Página Oficial](https://www.lenguajelatino.org)
+- [Manual Latino](https://manual-latino.readthedocs.io/es/latest/)
+- [Stack Overflow](https://es.stackoverflow.com/questions/tagged/latino)
 - [Chat en Gitter](https://gitter.im/primitivorm/latino?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 - [Chat en Telegram](https://t.me/joinchat/AAAAAD6l6_qIgQAAgu9DVQ)
-- [Manual Latino](https://manuallatino.blogspot.com)
 
 # Licencia
 Licenciado bajo la licencia [MIT](https://github.com/MelvinG24/Latino-MySQL/blob/master/LICENSE)<br/>
