@@ -2,33 +2,33 @@ cmake_minimum_required(VERSION 3.6)
 project(latino-mysql)
 
 if (WIN32)
-
   set (MySQL_PATH "C:/Program Files/MySQL/MySQL Server 8.0" CACHE FILEPATH "Ruta de instalacion de MySQL")
   set (LATINO_PATH "C:/src/latino" CACHE FILEPATH "Ruta de instalacion de latino")
-
   include_directories(${MySQL_PATH}/include)
   include_directories(${LATINO_PATH}/include)
-
   link_directories(${MySQL_PATH}/lib)
   link_directories(${LATINO_PATH}/msvc/x64/Debug)
-
 else()
-
   SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -D_GNU_SOURCE -Wall -std=c11 -rdynamic -ldl -fPIC")
   SET(CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS} -D_GNU_SOURCE -g -O0 -Wall -std=c11 -rdynamic -ldl -fPIC")
-
 endif()
 
 if(APPLE)
   LINK_DIRECTORIES(/usr/local/mysql/lib)
   LINK_DIRECTORIES(/usr/local/lib)
   LINK_DIRECTORIES(/usr/local/Cellar/readline/8.0.0/lib)
-
   include_directories("/usr/local/include")
   include_directories("/usr/local/mysql/include")
   include_directories("/usr/local/Cellar/readline/8.0.0/include")
   add_library(latino-mysql SHARED src/latino-mysql.c)
   target_link_libraries(latino-mysql liblatino_static mysqlclient readline)
-
   INSTALL(TARGETS latino-mysql DESTINATION /usr/local/lib)
+endif()
+
+if(UNIX)
+  include_directories(${MYSQL_INCLUDE_DIR})
+  include_directories(include)
+  add_library(latino-mysql SHARED src/latino-mysql.c)
+  target_link_libraries(latino-mysql mysqlclient latino)
+  INSTALL(TARGETS latino-mysql DESTINATION ${CMAKE_INSTALL_PREFIX}/lib)
 endif()
